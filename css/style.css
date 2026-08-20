@@ -504,8 +504,8 @@ section { position: relative; }
 .client-card .client-name {
   display: block;
   font-family: 'Jost', sans-serif;
-  font-size: 15px;
-  letter-spacing: 0.14em;
+  font-size: clamp(22px, 3.2vw, 32px);
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
