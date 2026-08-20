@@ -1,1 +1,8 @@
 .DS_Store
+
+# Raw source photos kept for re-cropping — not needed by the site itself.
+# (assets/ subfolder images are tracked normally.)
+/*.jpg
+/*.JPG
+/*.jpeg
+/*.png
