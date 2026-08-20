@@ -14,12 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
     status.classList.remove('is-error', 'is-success');
 
     const formData = new FormData(form);
+    const payload = Object.fromEntries(formData.entries());
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { Accept: 'application/json' },
-        body: formData,
+        headers: {
+          'Content-Type': 'application/json; charset=utf-8',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(payload),
       });
       const result = await response.json();
 
