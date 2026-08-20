@@ -247,10 +247,10 @@ section { position: relative; }
 }
 
 .section-head h2.tagline {
-  font-family: 'Jost', sans-serif;
-  font-weight: 300;
-  font-size: clamp(20px, 3.4vw, 34px);
-  letter-spacing: 0.05em;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
+  font-size: clamp(24px, 4vw, 42px);
+  letter-spacing: 0.03em;
 }
 
 /* Nav cards on top page */
@@ -281,10 +281,10 @@ section { position: relative; }
 }
 
 .nav-card h3 {
-  font-family: 'Jost', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  letter-spacing: 0.14em;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.1em;
   margin-bottom: 18px;
 }
 
