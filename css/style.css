@@ -266,6 +266,16 @@ section { position: relative; }
   letter-spacing: 0.03em;
 }
 
+.eyebrow-large {
+  font-size: clamp(24px, 4vw, 42px);
+  letter-spacing: 0.05em;
+}
+
+h2.tagline.tagline-small {
+  font-size: 16px;
+  letter-spacing: 0.3em;
+}
+
 /* Nav cards on top page */
 .card-grid {
   display: grid;
