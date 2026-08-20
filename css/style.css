@@ -237,10 +237,12 @@ section { position: relative; }
 .director-intro {
   font-family: 'Zen Old Mincho', serif;
   font-weight: 400;
+  font-size: 14px;
   letter-spacing: 0.03em;
 }
 
 .director-block .name-jp.director-intro {
+  font-size: 17px;
   font-weight: 500;
 }
 
