@@ -116,6 +116,11 @@ img { max-width: 100%; display: block; }
     radial-gradient(ellipse at 50% 0%, #ffffff 0%, var(--paper) 60%);
 }
 
+.hero-logo {
+  width: min(70vw, 480px);
+  height: auto;
+}
+
 .hero-eyebrow {
   font-family: 'Jost', sans-serif;
   font-size: 12px;
