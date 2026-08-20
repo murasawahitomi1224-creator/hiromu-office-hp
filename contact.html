@@ -55,6 +55,14 @@
         <label for="message">お問い合わせ内容<span class="req">必須</span></label>
         <textarea id="message" name="message" required></textarea>
       </div>
+
+      <div class="field field-consent">
+        <label class="consent-label">
+          <input type="checkbox" id="consent" name="consent" required>
+          <span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意の上、送信します<span class="req">必須</span></span>
+        </label>
+      </div>
+
       <button type="submit" class="submit-btn">送信する</button>
       <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
     </form>
