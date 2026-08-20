@@ -58,7 +58,8 @@ img { max-width: 100%; display: block; }
   display: flex;
   gap: 40px;
   list-style: none;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
   font-size: 13px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -272,7 +273,8 @@ section { position: relative; }
 .nav-card:hover { background: #fff; }
 
 .nav-card .num {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
   font-size: 12px;
   color: var(--muted);
   letter-spacing: 0.2em;
@@ -368,7 +370,8 @@ section { position: relative; }
 }
 
 .no-image-media span {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -405,7 +408,8 @@ section { position: relative; }
 }
 
 .director-block .role {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -420,7 +424,8 @@ section { position: relative; }
 }
 
 .director-block .name-en {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
   font-size: 13px;
   letter-spacing: 0.12em;
   color: var(--muted);
@@ -543,7 +548,8 @@ section { position: relative; }
 .timeline-item:first-child { border-top: 1px solid var(--line); }
 
 .timeline-item .year {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.08em;
   color: var(--muted);
@@ -770,7 +776,8 @@ section { position: relative; }
 }
 
 .site-footer .copyright {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.1em;
   color: var(--muted);
@@ -779,7 +786,8 @@ section { position: relative; }
 .site-footer .footer-link {
   display: inline-block;
   margin-top: 14px;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.1em;
   color: var(--muted);
@@ -925,15 +933,4 @@ section { position: relative; }
   .client-grid { gap: 70px; }
 
   .section-pad { padding: 90px 0; }
-
-  .hero-split {
-    grid-template-columns: 1fr;
-    min-height: auto;
-    padding: 16px;
-    gap: 16px;
-  }
-
-  .hero-split-text { padding: 100px 8px 24px; }
-
-  .hero-split-media { aspect-ratio: 4 / 5; border-radius: 16px; }
 }
