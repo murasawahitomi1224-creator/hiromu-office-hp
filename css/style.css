@@ -408,6 +408,10 @@ section { position: relative; }
   text-transform: uppercase;
 }
 
+.client-card .client-name.normal-case {
+  text-transform: none;
+}
+
 .client-card.no-image {
   padding: 60px 0;
   border: 1px solid var(--line);
