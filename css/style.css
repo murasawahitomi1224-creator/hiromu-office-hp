@@ -52,7 +52,7 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 1px 0 var(--line);
 }
 
-.logo-mark img { height: 20px; width: auto; }
+.logo-mark img { height: 30px; width: auto; }
 
 .nav-list {
   display: flex;
@@ -571,14 +571,16 @@ section { position: relative; }
 
 /* Clients */
 .client-grid {
-  max-width: 460px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  gap: 110px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 64px 40px;
 }
 
 .client-card {
+  flex: 0 1 260px;
   text-align: center;
 }
 
@@ -620,19 +622,6 @@ section { position: relative; }
   opacity: 0.85;
 }
 
-.network-text {
-  max-width: 640px;
-  margin: 48px auto 0;
-  text-align: center;
-  font-size: 15px;
-  color: var(--muted);
-  line-height: 2;
-}
-
-.network-text strong {
-  color: var(--ink);
-  font-weight: 500;
-}
 
 /* Contact form */
 .contact-form {
@@ -927,7 +916,9 @@ section { position: relative; }
 
   .timeline-item { grid-template-columns: 1fr; gap: 10px; }
 
-  .client-grid { gap: 70px; }
+  .client-grid { gap: 56px 24px; }
+
+  .client-card { flex-basis: 100%; max-width: 320px; }
 
   .section-pad { padding: 90px 0; }
 }
