@@ -736,6 +736,102 @@ section { position: relative; }
   color: var(--muted);
 }
 
+.site-footer .footer-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  border-bottom: 1px solid transparent;
+}
+
+.site-footer .footer-link:hover {
+  border-bottom-color: var(--muted);
+}
+
+/* Legal / Privacy Policy */
+.legal {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.legal .meta {
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+.legal p {
+  margin-bottom: 1.2em;
+}
+
+.legal .article-title {
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  margin: 48px 0 16px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+
+.legal .article-title:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.legal ul {
+  margin: 0 0 1.2em;
+  padding-left: 1.4em;
+}
+
+.legal li {
+  color: var(--muted);
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.legal-table {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 14px 24px;
+  font-size: 14px;
+}
+
+.legal-table dt {
+  color: var(--muted);
+}
+
+.legal-table dd {
+  color: var(--ink);
+  line-height: 1.8;
+}
+
+@media (max-width: 860px) {
+  .legal-table {
+    grid-template-columns: 1fr;
+    gap: 4px 0;
+  }
+
+  .legal-table dt {
+    margin-top: 16px;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  }
+
+  .legal-table dt:first-child {
+    margin-top: 0;
+  }
+}
+
 /* Responsive */
 @media (max-width: 860px) {
   .nav-list {
