@@ -13,15 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   onScroll();
   window.addEventListener('scroll', onScroll);
 
-  const sidebarMenu = document.querySelector('.top-sidebar-menu');
-
-  if (navList) {
-    [toggle, sidebarMenu].forEach((btn) => {
-      if (btn) {
-        btn.addEventListener('click', () => {
-          navList.classList.toggle('open');
-        });
-      }
+  if (toggle && navList) {
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('open');
     });
     navList.querySelectorAll('a').forEach((a) => {
       a.addEventListener('click', () => navList.classList.remove('open'));
