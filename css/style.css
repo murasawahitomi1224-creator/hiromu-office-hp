@@ -601,17 +601,13 @@ section { position: relative; }
   transform: scale(1.03);
 }
 
-.client-card .client-name {
+.client-logo {
   display: block;
-  font-family: 'Cormorant', serif;
-  font-weight: 500;
-  font-size: clamp(24px, 3.6vw, 36px);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.client-card .client-name.normal-case {
-  text-transform: none;
+  margin: 0 auto;
+  max-width: 200px;
+  max-height: 46px;
+  width: auto;
+  height: auto;
 }
 
 .client-card.no-image {
@@ -619,8 +615,9 @@ section { position: relative; }
   border: 1px solid var(--line);
 }
 
-.client-card.no-image .client-name {
-  color: var(--muted);
+.client-card.no-image .client-logo {
+  max-height: 56px;
+  opacity: 0.85;
 }
 
 .network-text {
