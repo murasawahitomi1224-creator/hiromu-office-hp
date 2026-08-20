@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | HIROMU OFFICE</title>
+<meta name="description" content="HIROMU OFFICEへのお問い合わせはこちらのフォームからお願いいたします。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header solid">
+  <a href="index.html" class="logo-mark"><img src="assets/logo.png" alt="HIROMU OFFICE"></a>
+  <button class="nav-toggle" aria-label="メニュー">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-list">
+    <li><a href="about.html">About</a></li>
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</header>
+
+<section class="section-pad" style="padding-top:160px;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Contact</span>
+      <h2>お問い合わせ</h2>
+    </div>
+
+    <p class="contact-note">
+      お仕事のご相談・お問い合わせは、下記フォームよりお気軽にご連絡ください。
+    </p>
+
+    <!--
+      Web3Forms (https://web3forms.com) でフォーム送信を処理しています。
+    -->
+    <form class="contact-form" id="contact-form">
+      <input type="hidden" name="access_key" value="fc61a4f2-5144-4b3b-a656-dcd9bf34807f">
+      <input type="hidden" name="subject" value="HIROMU OFFICE サイトからのお問い合わせ">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="field">
+        <label for="name">お名前<span class="req">必須</span></label>
+        <input type="text" id="name" name="お名前" required>
+      </div>
+      <div class="field">
+        <label for="company">会社名</label>
+        <input type="text" id="company" name="会社名">
+      </div>
+      <div class="field">
+        <label for="email">メールアドレス<span class="req">必須</span></label>
+        <input type="email" id="email" name="メールアドレス" required>
+      </div>
+      <div class="field">
+        <label for="message">お問い合わせ内容<span class="req">必須</span></label>
+        <textarea id="message" name="お問い合わせ内容" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">送信する</button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <img src="assets/logo.png" alt="HIROMU OFFICE">
+  <p class="copyright">&copy; HIROMU OFFICE</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
