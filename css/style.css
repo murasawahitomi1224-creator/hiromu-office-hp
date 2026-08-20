@@ -226,23 +226,18 @@ section { position: relative; }
   }
 }
 
-.section-head .eyebrow {
-  font-family: 'Jost', sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: var(--muted);
-  display: block;
-  margin-bottom: 18px;
-}
-
-.eyebrow.eyebrow-serif {
+.eyebrow {
   font-family: 'Cormorant', serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--muted);
+}
+
+.section-head .eyebrow {
+  display: block;
+  margin-bottom: 18px;
 }
 
 .section-head h2 {
