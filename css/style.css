@@ -579,16 +579,20 @@ h2.tagline.tagline-small {
 }
 
 .timeline-item .org {
-  font-size: 16px;
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 17px;
   font-weight: 500;
   letter-spacing: 0.04em;
   margin-bottom: 10px;
 }
 
 .timeline-item .desc {
+  font-family: 'Zen Old Mincho', serif;
+  font-weight: 400;
   font-size: 14px;
   color: var(--muted);
   line-height: 1.85;
+  letter-spacing: 0.03em;
 }
 
 /* Clients */
@@ -628,6 +632,10 @@ h2.tagline.tagline-small {
   align-items: center;
   justify-content: center;
   height: 56px;
+}
+
+.client-logo-wrap-boost {
+  height: 92px;
 }
 
 .client-logo {
