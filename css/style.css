@@ -379,32 +379,102 @@ section { position: relative; }
 }
 
 /* Services */
-.service-grid {
+.service-buttons {
   max-width: var(--max);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
 }
 
-.service-item {
-  background: var(--paper);
-  padding: 40px 44px;
-}
-
-.service-item .en {
+.service-btn {
+  position: relative;
   font-family: 'Jost', sans-serif;
-  font-size: 17px;
-  letter-spacing: 0.06em;
-  margin-bottom: 12px;
+  background: transparent;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  padding: 16px 30px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.service-item p {
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.85;
+.btn-label {
+  position: relative;
+  z-index: 1;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  transition: color 0.3s ease;
+}
+
+.service-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: var(--ink);
+  transform: scaleX(0);
+  transition: transform 0.35s ease;
+  z-index: 0;
+}
+
+.service-btn:hover::before,
+.service-btn:focus-visible::before {
+  transform: scaleX(1);
+}
+
+.service-btn:hover .btn-label,
+.service-btn:focus-visible .btn-label {
+  color: var(--paper);
+}
+
+.btn-tooltip {
+  position: absolute;
+  bottom: calc(100% + 14px);
+  left: 50%;
+  width: 240px;
+  transform: translateX(-50%) translateY(6px);
+  background: var(--ink);
+  color: var(--paper);
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  text-align: left;
+  padding: 16px 18px;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 20;
+}
+
+.btn-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--ink);
+}
+
+.service-btn:hover .btn-tooltip,
+.service-btn:focus-visible .btn-tooltip,
+.service-btn.is-open .btn-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.service-btn.is-open::before {
+  transform: scaleX(1);
+}
+
+.service-btn.is-open .btn-label {
+  color: var(--paper);
 }
 
 /* Career timeline */
@@ -648,7 +718,9 @@ section { position: relative; }
 
   .card-grid { grid-template-columns: 1fr; }
 
-  .service-grid { grid-template-columns: 1fr; }
+  .service-buttons { gap: 12px; }
+
+  .btn-tooltip { width: min(230px, 76vw); }
 
   .timeline-item { grid-template-columns: 1fr; gap: 10px; }
 

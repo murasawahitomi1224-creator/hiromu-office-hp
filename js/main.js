@@ -21,4 +21,20 @@ document.addEventListener('DOMContentLoaded', () => {
       a.addEventListener('click', () => navList.classList.remove('open'));
     });
   }
+
+  const serviceBtns = document.querySelectorAll('.service-btn');
+  if (serviceBtns.length) {
+    serviceBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const wasOpen = btn.classList.contains('is-open');
+        serviceBtns.forEach((b) => b.classList.remove('is-open'));
+        if (!wasOpen) btn.classList.add('is-open');
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.service-btn')) {
+        serviceBtns.forEach((b) => b.classList.remove('is-open'));
+      }
+    });
+  }
 });
