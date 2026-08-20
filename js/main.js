@@ -3,8 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav-toggle');
   const navList = document.querySelector('.nav-list');
 
+  const heroEl = document.querySelector('.top-hero');
+  const solidThreshold = heroEl ? Math.max(heroEl.offsetHeight - 120, 40) : 40;
+
   const onScroll = () => {
-    if (window.scrollY > 40) {
+    if (window.scrollY > solidThreshold) {
       header.classList.add('solid');
     } else {
       header.classList.remove('solid');
