@@ -311,6 +311,22 @@ section { position: relative; }
   filter: grayscale(1);
 }
 
+.no-image-media {
+  aspect-ratio: 4 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+}
+
+.no-image-media span {
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .split-body .lead {
   max-width: none;
   margin: 0;
