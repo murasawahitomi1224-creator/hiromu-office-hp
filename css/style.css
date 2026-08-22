@@ -637,8 +637,13 @@ h2.tagline.tagline-small {
 }
 
 .client-logo-wrap-boost {
-  width: 250px;
-  height: 117px;
+  width: 290px;
+  height: 136px;
+}
+
+.client-logo-wrap-mout {
+  width: 260px;
+  height: 66px;
 }
 
 .client-logo {
